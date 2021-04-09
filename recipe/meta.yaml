@@ -20,8 +20,8 @@ requirements:
     - poetry
   run:
     - python >=3.6.1
-    - allennlp >=1.1
-    - optuna >=2.2,<3
+    - allennlp >=2,<3
+    - optuna >=2.6,<3
 
 test:
   imports:
