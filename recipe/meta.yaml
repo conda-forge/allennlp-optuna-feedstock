@@ -1,4 +1,4 @@
-{% set version = "0.1.4" %}
+{% set version = "0.1.5" %}
 
 package:
   name: allennlp-optuna
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/himkt/allennlp-optuna/archive/v{{ version }}.tar.gz
-  sha256: b1d4fca23f09991178313e1865d884f159c49c235e3245e158e880a76785b79e
+  sha256: d03c5b94e8806411a5e62a1074aaf6dfd4fe23c05a72837706bc3230e5459709
 
 build:
   noarch: python
@@ -20,8 +20,8 @@ requirements:
     - poetry
   run:
     - python >=3.6.1
-    - allennlp >=1.1
-    - optuna >=2.2,<3
+    - allennlp >=2,<3
+    - optuna >=2.6,<3
 
 test:
   imports:
@@ -31,7 +31,7 @@ about:
   home: https://github.com/himkt/allennlp-optuna
   license: MIT
   license_file: LICENSE
-  summary: 'AllenNLP plugin for adding subcommands to use Optuna, making hyperparameter optimization easy'
+  summary: AllenNLP plugin for adding subcommands to use Optuna, making hyperparameter optimization easy
 
   doc_url: https://allennlp-optuna.readthedocs.io/en/latest/
   dev_url: https://github.com/himkt/allennlp-optuna
