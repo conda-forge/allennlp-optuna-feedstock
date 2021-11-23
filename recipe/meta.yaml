@@ -1,4 +1,4 @@
-{% set version = "0.1.6" %}
+{% set version = "0.1.7" %}
 
 package:
   name: allennlp-optuna
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/himkt/allennlp-optuna/archive/v{{ version }}.tar.gz
-  sha256: c56d40c5a21bde9bd88ddcc08d5f5f35a33da2ea2c4d279c49c8d9281085abd2
+  sha256: 65fd8038efbb1a43b8bfc2979a876367b833a734d1e1dd92ed613a103cf24295
 
 build:
   noarch: python
